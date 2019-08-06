@@ -111,15 +111,16 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         if(someJobs.isEmpty()){
-            System.out.println("No jobs found. Try searching for different jobs.");
+            System.out.println("*****");
+            System.out.println("No jobs found. Try searching for something different.");
         }
         for(HashMap<String, String> i: someJobs){
-            System.out.println("***********************************");
+            System.out.println("*****");
             for(String j: i.keySet() ){
                 System.out.print(j + ": ");
                 System.out.println(i.get(j));
             }
         }
-        System.out.println("***********************************");
+        System.out.println("*****");
     }
 }
